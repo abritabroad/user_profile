@@ -1,6 +1,8 @@
 
 /*
 
+!/.gitignore
+
 !/AppData
 /AppData/*
 !/AppData/Roaming
@@ -12,4 +14,6 @@
 !/AppData/Roaming/Code/User/keybindings.json
 !/AppData/Roaming/Code/User/settings.json
 
-!/.gitignore
+!/Documents
+/Documents/*
+!/Documents/WindowsPowerShell
