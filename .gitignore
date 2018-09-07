@@ -1,0 +1,15 @@
+
+/*
+
+!/AppData
+/AppData/*
+!/AppData/Roaming
+/AppData/Roaming/*
+!/AppData/Roaming/Code
+/AppData/Roaming/Code/*
+!/AppData/Roaming/Code/User
+/AppData/Roaming/Code/User/*
+!/AppData/Roaming/Code/User/keybindings.json
+!/AppData/Roaming/Code/User/settings.json
+
+!/.gitignore

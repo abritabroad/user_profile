@@ -1,0 +1,24 @@
+{
+    "editor.detectIndentation": false,
+    "editor.snippetSuggestions": "top",
+    "editor.tabSize": 4,
+    "git.ignoreMissingGitWarning": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": false,
+        "**/.gitX": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        "**/node_modules": true
+    },
+    "git.enableSmartCommit": true,
+    "window.zoomLevel": 0,
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.preferences.quoteStyle": "single",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "breadcrumbs.enabled": true
+}
