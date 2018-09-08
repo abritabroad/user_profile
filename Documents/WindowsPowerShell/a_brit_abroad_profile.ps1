@@ -1,5 +1,5 @@
 
-Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
+Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-a4faccd\src\posh-git.psd1'
 
 # To get list of colors that can be changed type '$global:GitPromptSettings' at PS command prompt
 
