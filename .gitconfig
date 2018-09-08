@@ -1,0 +1,19 @@
+[pull]
+	rebase = true
+[user]
+	name = Steven Fisher
+	email = a_brit_abroad@hotmail.com
+[core]
+	editor = uedit64
+	autocrlf = true
+[merge]
+	tool = p4merge
+[color]
+	ui = true
+[color "status"]
+	changed = red bold
+	untracked = red bold
+	added = green bold
+[color "branch"]
+	remote = red bold
+	

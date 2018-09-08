@@ -2,6 +2,7 @@
 /*
 
 !/.gitignore
+!/.gitconfig
 
 !/AppData
 /AppData/*
