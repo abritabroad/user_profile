@@ -1,11 +1,12 @@
+[core]
+	editor = uedit64
+	autocrlf = true
+	excludesfile = ~/.gitignore
 [pull]
 	rebase = true
 [user]
 	name = Steven Fisher
 	email = a_brit_abroad@hotmail.com
-[core]
-	editor = uedit64
-	autocrlf = true
 [merge]
 	tool = p4merge
 [color]
