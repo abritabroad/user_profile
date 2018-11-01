@@ -75,5 +75,9 @@
         "key": "ctrl+shift+alt+left",
         "command": "editor.action.smartSelect.shrink",
         "when": "editorTextFocus"
-    }    
+    },
+    {
+        "key": "ctrl+shift+f4",
+        "command": "workbench.action.closeOtherEditors"
+    }
 ]
