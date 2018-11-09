@@ -1,0 +1,1 @@
+git ls-files -v . | select-string -pattern ^S
