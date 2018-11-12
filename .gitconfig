@@ -7,6 +7,10 @@
 [user]
 	name = Steven Fisher
 	email = a_brit_abroad@hotmail.com
+	
+[alias]
+	ls-files-root = ! git ls-files
+	
 [merge]
 	tool = p4merge
 [color]
