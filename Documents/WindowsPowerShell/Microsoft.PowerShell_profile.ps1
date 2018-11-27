@@ -1,7 +1,11 @@
 ﻿
-$profileScript = (Split-Path -Path $profile) + "\a_brit_abroad_profile.ps1"
+$profileRoot = (Split-Path -Path $profile)
+
+$profileScript = $profileRoot + "\a_brit_abroad_profile.ps1"
 
 & $profileScript
+
+$env:path += ";$profileRoot"
 
 Set-Alias -Name BH -Value BranchHistory
 Set-Alias -Name BD -Value BranchDiff
