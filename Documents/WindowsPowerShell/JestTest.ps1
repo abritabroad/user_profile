@@ -1,0 +1,1 @@
+node --inspect-brk ./node_modules/jest-cli/bin/jest -i 
