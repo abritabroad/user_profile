@@ -10,6 +10,6 @@ $env:path += ";$profileRoot"
 Set-Alias -Name BH -Value BranchHistory
 Set-Alias -Name BD -Value BranchDiff
 
-remove-item env:ELECTRON_RUN_AS_NODE
+remove-item env:ELECTRON_RUN_AS_NODE -erroraction 'silentlycontinue'
 
 function ngm { Invoke-Expression 'npm run mock' }
