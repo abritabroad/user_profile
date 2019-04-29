@@ -13,16 +13,14 @@ function ngm { Invoke-Expression 'npm run mock' }
 
 function gbh { Invoke-Expression "git for-each-ref --sort='-committerdate:iso8601' --format=' %(committerdate:iso8601)%09%(refname)' refs/heads" }
 
-function ngm { Invoke-Expression 'npm run mock' }
-
-function gbh { Invoke-Expression "git for-each-ref --sort='-committerdate:iso8601' --format=' %(committerdate:iso8601)%09%(refname)' refs/heads" }
-
 # function bd { Invoke-Expression 'git diff --name-status master..' }
 function gbd { Invoke-Expression 'git diff --name-status develop..' }
 
 function gcam($message) { Invoke-Expression 'git commit -am $message' }
 
 function gcd { Invoke-Expression 'git checkout develop' }
+
+function gcf { Invoke-Expression 'git clean -f' }
 
 function gpl { Invoke-Expression 'git pull' }
 
