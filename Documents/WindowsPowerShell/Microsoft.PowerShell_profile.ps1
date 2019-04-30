@@ -24,7 +24,7 @@ function gcf { Invoke-Expression 'git clean -f' }
 
 function gpl { Invoke-Expression 'git pull' }
 
-function gpo { Invoke-Expression 'git push' }
+function gpu { Invoke-Expression 'git push' }
 
 function gpof { Invoke-Expression 'git push --force' }
 
