@@ -26,7 +26,7 @@ function gpl { Invoke-Expression 'git pull' }
 
 function gpu { Invoke-Expression 'git push --no-verify' }
 
-function gpof { Invoke-Expression 'git push --force' }
+function gpuf { Invoke-Expression 'git push --force' }
 
 function gra { Invoke-Expression 'git rebase --abort' }
 
