@@ -20,7 +20,7 @@ function gcam($message) { Invoke-Expression 'git commit -am $message' }
 
 function gcd { Invoke-Expression 'git checkout develop' }
 
-function gcf { Invoke-Expression 'git clean -f' }
+function gcf { Invoke-Expression 'git clean -fd' }
 
 function gpl { Invoke-Expression 'git pull' }
 
