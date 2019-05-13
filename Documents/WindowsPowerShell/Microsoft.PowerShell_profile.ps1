@@ -22,6 +22,11 @@ function gcd { Invoke-Expression 'git checkout develop' }
 
 function gcf { Invoke-Expression 'git clean -fd' }
 
+function gcnb($branchName) { 
+    Invoke-Expression 'git checkout -b $branchName' 
+    Invoke-Expression 'git push -u origin $branchName --no-verify'
+}
+
 function gpl { Invoke-Expression 'git pull' }
 
 function gpu { Invoke-Expression 'git push --no-verify' }
