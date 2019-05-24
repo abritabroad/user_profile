@@ -1,5 +1,5 @@
 [core]
-	editor = uedit64
+	editor = code --wait
 	autocrlf = true
 	excludesfile = ~/.gitignore
 [pull]
