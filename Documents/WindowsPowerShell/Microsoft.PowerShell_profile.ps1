@@ -23,7 +23,7 @@ function gcd { Invoke-Expression 'git checkout develop' }
 function gcf { Invoke-Expression 'git clean -fd' }
 
 function gcnb($branchName) {
-    if ($branchName -eq '') { write-host "Branch name missing"; return }
+    if (!$branchName) { write-host "Branch name missing"; return }
     Invoke-Expression 'git checkout -b $branchName' 
     Invoke-Expression 'git push -u origin $branchName --no-verify'
 }
@@ -43,6 +43,11 @@ function grd { Invoke-Expression 'git rebase develop' }
 function grdo { Invoke-Expression 'git rebase develop -Xours' }
 
 function gs { Invoke-Expression 'git status' }
+
+function gsq($commitOffset) {
+    if (!$commitOffset) { write-host "Commit offset missing"; return }
+    Invoke-Expression 'git rebase -i HEAD~$commitOffset' 
+}
 
 function ybp { Invoke-Expression 'yarn build-python' }
 
