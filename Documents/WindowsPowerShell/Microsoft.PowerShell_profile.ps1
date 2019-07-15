@@ -38,6 +38,11 @@ function gra { Invoke-Expression 'git rebase --abort' }
 
 function grh { Invoke-Expression 'git reset --hard' }
 
+function grho { 
+    $currentBranch = Invoke-Expression '&git rev-parse --abbrev-ref HEAD'
+    Invoke-Expression 'git reset --hard origin/$currentBranch'
+}
+
 function grd { Invoke-Expression 'git rebase develop' }
 
 function grdo { Invoke-Expression 'git rebase develop -Xours' }
