@@ -28,6 +28,8 @@ function gcnb($branchName) {
     Invoke-Expression 'git push -u origin $branchName --no-verify'
 }
 
+function gmnc { Invoke-Expression 'git merge poc/angular_standalone --no-commit' }
+
 function gpl { Invoke-Expression 'git pull' }
 
 function gpu { Invoke-Expression 'git push --no-verify' }
