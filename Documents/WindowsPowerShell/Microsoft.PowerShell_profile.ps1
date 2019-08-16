@@ -22,6 +22,8 @@ function gcd { Invoke-Expression 'git checkout develop' }
 
 function gcf { Invoke-Expression 'git clean -fd' }
 
+function gcl { Invoke-Expression 'git checkout -' }
+
 function gcnb($branchName) {
     if (!$branchName) { write-host "Branch name missing"; return }
     Invoke-Expression 'git checkout -b $branchName' 
