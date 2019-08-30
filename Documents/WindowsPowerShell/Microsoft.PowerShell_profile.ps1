@@ -16,7 +16,7 @@ function gbh { Invoke-Expression "git for-each-ref --sort='-committerdate:iso860
 # function bd { Invoke-Expression 'git diff --name-status master..' }
 function gbd { Invoke-Expression 'git diff --name-status develop..' }
 
-function gcam($message) { Invoke-Expression 'git commit -am $message' }
+function gcam($message) { Invoke-Expression 'git commit -am $message --no-verify' }
 
 function gcd { Invoke-Expression 'git checkout develop' }
 
