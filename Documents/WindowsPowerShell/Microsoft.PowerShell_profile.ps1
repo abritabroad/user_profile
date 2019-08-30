@@ -30,7 +30,7 @@ function gcnb($branchName) {
     Invoke-Expression 'git push -u origin $branchName --no-verify'
 }
 
-function gcp { Invoke-Expression 'git cherry-pick ad53' }
+function gcp { Invoke-Expression 'git cherry-pick ad532 --no-commit' }
 
 function gmnc { Invoke-Expression 'git merge poc/angular_standalone --no-commit' }
 
