@@ -32,6 +32,8 @@ function gcnb($branchName) {
 
 function gcp { Invoke-Expression 'git cherry-pick ad532 --no-commit' }
 
+function glg { Invoke-Expression 'git log --graph --pretty=format:"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cr)%Creset %C(green)%ce%Creset %s"' }
+
 function gmnc { Invoke-Expression 'git merge poc/angular_standalone --no-commit' }
 
 function gpl { Invoke-Expression 'git pull' }
