@@ -20,9 +20,9 @@ function gcam($message) { Invoke-Expression 'git commit -am $message --no-verify
 
 function gcd { Invoke-Expression 'git checkout develop' }
 
-function gcf { Invoke-Expression 'git clean -fd' }
-
 function gcl { Invoke-Expression 'git checkout -' }
+
+function gcf { Invoke-Expression 'git clean -fd' }
 
 function gcnb($branchName) {
     if (!$branchName) { write-host "Branch name missing"; return }
@@ -30,7 +30,7 @@ function gcnb($branchName) {
     Invoke-Expression 'git push -u origin $branchName --no-verify'
 }
 
-function gcp { Invoke-Expression 'git cherry-pick ad532 --no-commit' }
+function gcp { Invoke-Expression 'git cherry-pick 08ae4da2 --no-commit' }
 
 function glg { Invoke-Expression 'git log --graph --pretty=format:"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cd)%Creset %C(green)%ce%Creset %s"' }
 
@@ -42,9 +42,19 @@ function gpl { Invoke-Expression 'git pull' }
 
 function gpu { Invoke-Expression 'git push --no-verify' }
 
-function gpuf { Invoke-Expression 'git push --force' }
+function gpuf { Invoke-Expression 'git push --force --no-verify' }
 
 function gra { Invoke-Expression 'git rebase --abort' }
+
+function grcp {
+    Invoke-Expression 'git restore --staged *'
+    Invoke-Expression 'git restore *endpoints.ts'
+    Invoke-Expression 'git restore *appConfig.json'
+}
+
+function grd { Invoke-Expression 'git rebase develop' }
+
+function grdo { Invoke-Expression 'git rebase develop -Xours' }
 
 function grh { Invoke-Expression 'git reset --hard' }
 
@@ -53,9 +63,9 @@ function grho {
     Invoke-Expression 'git reset --hard origin/$currentBranch'
 }
 
-function grd { Invoke-Expression 'git rebase develop' }
+function grs { Invoke-Expression 'git rebase Supplements' }
 
-function grdo { Invoke-Expression 'git rebase develop -Xours' }
+function grso { Invoke-Expression 'git rebase Supplements -Xours' }
 
 function gs { Invoke-Expression 'git status' }
 
