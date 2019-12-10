@@ -1,0 +1,163 @@
+Shortcut              Command                                                       Description                                                  
+---------------------+-------------------------------------------------------------+-------------------------------------------------------------
+Alt+0                 Insert user template 0                                        Insert user template 0
+Alt+1                 Insert user template 1                                        Insert user template 1
+Alt+2                 Insert user template 2                                        Insert user template 2
+Alt+3                 Insert user template 3                                        Insert user template 3
+Alt+4                 Insert user template 4                                        Insert user template 4
+Alt+5                 Insert user template 5                                        Insert user template 5
+Alt+6                 Insert user template 6                                        Insert user template 6
+Alt+7                 Insert user template 7                                        Insert user template 7
+Alt+8                 Insert user template 8                                        Insert user template 8
+Alt+9                 Insert user template 9                                        Insert user template 9
+Alt+Add               Position active line at bottom of window                      Position active line at bottom of window
+Alt+C                 Column mode                                                   Toggle column mode editing
+Alt+CLEAR             Position active line at center of window                      Position active line at center of window
+Alt+DOWN ARROW        Next file tab                                                 Activate next file tab to the right
+Alt+F10               Previous panel                                                Jump to previous panel
+Alt+F11               Compare                                                       Compare files and folders
+Alt+F12               Save all                                                      Save all modified files
+Alt+F2                Previous bookmark                                             Go to the previous bookmark in the file
+Alt+F3                Find                                                          Find text
+Alt+F5                To uppercase                                                  Change selected text to uppercase
+Alt+F8                Layouts                                                       Select and modify layouts
+Alt+LEFT ARROW        Position cursor at previous paragraph start                   Position cursor at previous paragraph start
+Alt+Multiply          Position active line at center of window                      Position active line at center of window
+Alt+PGDN              Position cursor at bottom of window                           Position cursor at bottom of window
+Alt+PGUP              Position cursor at top of window                              Position cursor at top of window
+Alt+Q                 Quick find switch focus                                       Quick find switch focus
+Alt+RETURN            Character properties                                          Show properties of character under caret
+Alt+RIGHT ARROW       Position cursor at next paragraph start                       Position cursor at next paragraph start
+Alt+Shift+0           User template 10                                              User template 10
+Alt+Shift+1           User template 11                                              User template 11
+Alt+Shift+2           User template 12                                              User template 12
+Alt+Shift+3           User template 13                                              User template 13
+Alt+Shift+4           User template 14                                              User template 14
+Alt+Shift+5           User template 15                                              User template 15
+Alt+Shift+6           User template 16                                              User template 16
+Alt+Shift+7           User template 17                                              User template 17
+Alt+Shift+8           User template 18                                              User template 18
+Alt+Shift+9           User template 19                                              User template 19
+Alt+Shift+C           Close project/workspace                                       Close project and associated open files
+Alt+Shift+D           Duplicate line                                                Duplicate active line
+Alt+Shift+F2          Select to previous bookmark                                   Move to previous bookmark and select
+Alt+Shift+O           Open project/workspace                                        Open project/workspace
+Alt+Shift+R           Run active file as script                                     Run active file as script
+Alt+Shift+S           Project settings                                              Modify settings, add and remove files to project
+Alt+Shift+Z           Remove last caret                                             Remove last caret
+Alt+Subtract          Position active line at top of window                         Position active line at top of window
+Alt+Ü                 Word count                                                    Show count of words, lines, etc. for selection and file
+Alt+UP ARROW          Previous file tab                                             Activate previous file tab to the left
+Ctrl+,                Make selections                                               Convert highlighted text to selection(s)
+Ctrl+.                Highlight all selected                                        Highlight all occurrences of selected text
+Ctrl+/                Trim trailing spaces                                          Trim trailing spaces in selection or file
+Ctrl+;                Add next occurrence of string to selections                   Add next occurrence of string to selections
+Ctrl+0                Windows clipboard                                             Set Windows clipboard active
+Ctrl+1                User clipboard 1                                              Set user clipboard 1 active
+Ctrl+2                User clipboard 2                                              Set user clipboard 2 active
+Ctrl+3                User clipboard 3                                              Set user clipboard 3 active
+Ctrl+4                User clipboard 4                                              Set user clipboard 4 active
+Ctrl+5                User clipboard 5                                              Set user clipboard 5 active
+Ctrl+6                User clipboard 6                                              Set user clipboard 6 active
+Ctrl+7                User clipboard 7                                              Set user clipboard 7 active
+Ctrl+8                User clipboard 8                                              Set user clipboard 8 active
+Ctrl+9                User clipboard 9                                              Set user clipboard 9 active
+Ctrl+A                Select all                                                    Select the entire file
+Ctrl+Add              Collapse all                                                  Collapse all foldable sections of code
+Ctrl+B                Select to matching brace                                      Select to matching brace
+Ctrl+BACKSPACE        Delete current/previous word                                  Delete current/previous word
+Ctrl+C                Copy                                                          Copy selected text to clipboard
+Ctrl+D                Hex insert/delete                                             Insert or delete characters in hex mode
+Ctrl+DEL              Delete next word                                              Delete next word
+Ctrl+DOWN ARROW       Scroll display down one line                                  Scroll display down one line
+Ctrl+E                Delete line                                                   Delete active / selected line(s)
+Ctrl+F                Quick find                                                    Activate quick find window
+Ctrl+F10              Next panel                                                    Jump to next panel
+Ctrl+F11              Delete to start of line                                       Delete from current position to start of line
+Ctrl+F12              Delete to end of line                                         Delete from current position to end of line
+Ctrl+F2               Toggle bookmark                                               Toggle bookmark on active line
+Ctrl+F3               Find prev                                                     Find previous occurrence of string
+Ctrl+F4               Close the active file                                         Close the active file
+Ctrl+F5               To lowercase                                                  Change selected text to lowercase
+Ctrl+F6               Next window                                                   Switch to the next accessed file tab
+Ctrl+F7               Switch focus between output window and active edit window     Switch focus between output window and active edit window
+Ctrl+F8               Tag list                                                      Toggle tag list
+Ctrl+F9               Last DOS command                                              Repeat last DOS command
+Ctrl+G                Goto                                                          Go to line, bookmark or address (hex mode)
+Ctrl+H                Hex edit                                                      Toggle hex editing mode
+Ctrl+I                Literal character                                             Insert literal character (i.e., control code)
+Ctrl+INS              Copy                                                          Copy selected text to clipboard
+Ctrl+J                Join lines                                                    Combine all selected lines
+Ctrl+K                Spell check                                                   Spell check selection or file
+Ctrl+L                Play any/multiple times                                       Select macro to play any number of times
+Ctrl+M                Play again                                                    Replay the previously played macro
+Ctrl+Multiply         Expand all                                                    Expand all collapsed code/text
+Ctrl+N                New                                                           Create new file
+Ctrl+Numeric pad 1    Go to end of previous word                                    Go to end of previous word
+Ctrl+Numeric pad 2    Go to end of next word                                        Go to end of next word
+Ctrl+O                Open                                                          Open a file
+Ctrl+P                Print                                                         Print active file
+Ctrl+P, Ctrl+S        Persistent selection                                          Begin persistent selection
+Ctrl+Q                Quick open                                                    Use quick open to open a file
+Ctrl+R                Replace                                                       Replace text
+Ctrl+RETURN           Line                                                          Insert new, empty line at current position
+Ctrl+S                Save                                                          Save active file
+Ctrl+Shift+/          Remove all carets                                             Remove all carets
+Ctrl+Shift+0          User tool 10                                                  Run user tool 10
+Ctrl+Shift+1          User tool 1                                                   Run user tool 1
+Ctrl+Shift+2          User tool 2                                                   Run user tool 2
+Ctrl+Shift+3          User tool 3                                                   Run user tool 3
+Ctrl+Shift+4          User tool 4                                                   Run user tool 4
+Ctrl+Shift+5          User tool 5                                                   Run user tool 5
+Ctrl+Shift+6          User tool 6                                                   Run user tool 6
+Ctrl+Shift+7          User tool 7                                                   Run user tool 7
+Ctrl+Shift+8          User tool 8                                                   Run user tool 8
+Ctrl+Shift+9          User tool 9                                                   Run user tool 9
+Ctrl+Shift+A          Insert Character "ä" or "Ä"                                   Insert Character "ä" or "Ä"
+Ctrl+Shift+C          Copy & append                                                 Copy the selection and append it to the clipboard
+Ctrl+Shift+DOWN ARROW Next message                                                  Next message
+Ctrl+Shift+F          Find in files                                                 Find text in files
+Ctrl+Shift+F4         Close all files                                               Close all open files
+Ctrl+Shift+F6         Previous window                                               Switch to the previous accessed file tab
+Ctrl+Shift+I          Quick find                                                    Activate quick find window
+Ctrl+Shift+O          Insert character "ö" or "Ö"                                   Insert character "ö" or "Ö"
+Ctrl+Shift+P          Command palette                                               Command palette
+Ctrl+Shift+Q          Quick record                                                  Immediately begin macro recording
+Ctrl+Shift+R          Replace in files                                              Replace text in files
+Ctrl+Shift+S          Insert character "ß"                                          Insert character "ß"
+Ctrl+Shift+T          Save active file locally and upload to linked server location Save active file locally and upload to linked server location
+Ctrl+Shift+U          Insert character "ü" or "Ü"                                   Insert character "ü" or "Ü"
+Ctrl+Shift+Û          Hide/show selection                                           Hide or show selected text
+Ctrl+Shift+UP ARROW   Previous message                                              Previous message
+Ctrl+Shift+V          Paste & copy                                                  Swap selected text with clipboard text
+Ctrl+Shift+X          Cut & append                                                  Cut and add selected text to clipboard
+Ctrl+Shift+Z          Scripts                                                       Open Scripts dialog
+Ctrl+SPACE            Auto-complete                                                 Show auto-complete list
+Ctrl+T                Reformat paragraph                                            Reformat paragraph to column wrap
+Ctrl+U                File view                                                     Toggle file view
+Ctrl+Ü                Trim leading spaces                                           Trim leading spaces in selection or file
+Ctrl+UP ARROW         Scroll display up one line                                    Scroll display up one line
+Ctrl+V                Paste                                                         Paste clipboard contents
+Ctrl+W                Toggle word-wrap                                              Toggle word wrap
+Ctrl+X                Cut                                                           Cut selected text to clipboard
+Ctrl+Y                Redo                                                          Redo the last undone action
+Ctrl+Z                Undo                                                          Undo the last action
+F10                   Run Windows program                                           Run a Windows program
+F11                   Find symbol                                                   Find symbol in Ctags file
+F12                   Save as                                                       Save active file as...
+F2                    Next bookmark                                                 Go to the next bookmark in the file
+F3                    Find next                                                     Find next occurrence of string
+F4                    Switch focus between file view and active edit window         Switch focus between file view and active edit window
+F5                    Capitalize                                                    Capitalize first letter of each word
+F6                    Focus next pane                                               Switch to next window pane
+F7                    Date/time                                                     Insert date and time at current position
+F8                    Function list                                                 Refresh function list
+F9                    DOS command                                                   Run DOS command and capture output to edit window
+Shift+DEL             Cut                                                           Cut selected text to clipboard
+Shift+F1              Enable help pointer                                           Display help for clicked on buttons, menus and windows
+Shift+F2              Select to next bookmark                                       Move to next bookmark and select
+Shift+F3              Find next                                                     Find next occurrence of string
+Shift+F5              Invert case                                                   Invert case of selected string
+Shift+F6              Focus previous pane                                           Switch to previous window pane
+Shift+INS             Paste                                                         Paste clipboard contents
+---------------------+-------------------------------------------------------------+-------------------------------------------------------------
