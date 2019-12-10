@@ -20,6 +20,8 @@ function gcam($message) { Invoke-Expression 'git commit -am $message --no-verify
 
 function gcd { Invoke-Expression 'git checkout develop' }
 
+function gcsu { Invoke-Expression 'git checkout Supplements' }
+
 function gcl { Invoke-Expression 'git checkout -' }
 
 function gcf { Invoke-Expression 'git clean -fd' }
@@ -30,7 +32,7 @@ function gcnb($branchName) {
     Invoke-Expression 'git push -u origin $branchName --no-verify'
 }
 
-function gcp { Invoke-Expression 'git cherry-pick 08ae4da2 --no-commit' }
+function gcp { Invoke-Expression 'git cherry-pick 0a1ac0f8 --no-commit' }
 
 function glg { Invoke-Expression 'git log --graph --pretty=format:"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cd)%Creset %C(green)%ce%Creset %s"' }
 
@@ -49,7 +51,6 @@ function gra { Invoke-Expression 'git rebase --abort' }
 function grcp {
     Invoke-Expression 'git restore --staged *'
     Invoke-Expression 'git restore *endpoints.ts'
-    Invoke-Expression 'git restore *appConfig.json'
 }
 
 function grd { Invoke-Expression 'git rebase develop' }
