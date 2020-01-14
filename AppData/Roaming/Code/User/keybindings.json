@@ -79,5 +79,15 @@
     {
         "key": "ctrl+shift+f4",
         "command": "workbench.action.closeOtherEditors"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
     }
 ]
