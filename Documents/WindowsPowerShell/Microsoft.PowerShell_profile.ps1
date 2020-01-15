@@ -34,7 +34,7 @@ function gcnb($branchName) {
 
 function gcp { Invoke-Expression 'git cherry-pick 0a1ac0f8 --no-commit' }
 
-function gDeleteAllBranches { Invoke-Expression "git for-each-ref --format '%(refname:short)' refs/heads | ForEach-Object {git branch $_ -d}" }
+function gDeleteAllBranches { Invoke-Expression "git for-each-ref --format '%(refname:short)' refs/heads | ForEach-Object { git branch `$_ -d }" }
 
 function glg { Invoke-Expression 'git log --graph --pretty=format:"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cd)%Creset %C(green)%ce%Creset %s"' }
 
