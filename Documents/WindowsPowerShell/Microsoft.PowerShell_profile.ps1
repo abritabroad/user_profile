@@ -34,6 +34,8 @@ function gcnb($branchName) {
 
 function gcp { Invoke-Expression 'git cherry-pick 0a1ac0f8 --no-commit' }
 
+function gDeleteAllBranches { Invoke-Expression "git for-each-ref --format '%(refname:short)' refs/heads | ForEach-Object {git branch $_ -d}" }
+
 function glg { Invoke-Expression 'git log --graph --pretty=format:"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cd)%Creset %C(green)%ce%Creset %s"' }
 
 function glgx { Invoke-Expression 'git log --graph --pretty=format:"%h%x09%d%x09(%cd)%x09%ce%x09%s" > GitLog.xls' }
@@ -41,6 +43,8 @@ function glgx { Invoke-Expression 'git log --graph --pretty=format:"%h%x09%d%x09
 function gmnc { Invoke-Expression 'git merge poc/angular_standalone --no-commit' }
 
 function gpl { Invoke-Expression 'git pull' }
+
+function gPrune { Invoke-Expression "git remote prune origin" }
 
 function gpu { Invoke-Expression 'git push --no-verify' }
 
