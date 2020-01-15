@@ -75,6 +75,8 @@ function gsq($commitOffset) {
     Invoke-Expression 'git rebase -i HEAD~$commitOffset' 
 }
 
+function nrl { Invoke-Expression 'npm run local' }
+
 function ybp { Invoke-Expression 'yarn build-python' }
 
 function ydp { Invoke-Expression 'yarn debug-page' }
