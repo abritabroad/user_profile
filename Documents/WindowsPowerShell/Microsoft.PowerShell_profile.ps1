@@ -9,7 +9,7 @@ $env:path += ";$profileRoot"
 
 remove-item env:ELECTRON_RUN_AS_NODE -erroraction 'silentlycontinue'
 
-function ngm { Invoke-Expression 'npm run mock' }
+function nrm { Invoke-Expression 'npm run mock' }
 
 function gbh { Invoke-Expression "git for-each-ref --sort='-committerdate:iso8601' --format=' %(committerdate:iso8601)%09%(refname)' refs/heads" }
 
