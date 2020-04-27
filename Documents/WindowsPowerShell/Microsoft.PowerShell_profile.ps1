@@ -9,8 +9,6 @@ $env:path += ";$profileRoot"
 
 remove-item env:ELECTRON_RUN_AS_NODE -erroraction 'silentlycontinue'
 
-function nrm { Invoke-Expression 'npm run mock' }
-
 function gbh { Invoke-Expression "git for-each-ref --sort='-committerdate:iso8601' --format=' %(committerdate:iso8601)%09%(refname)' refs/heads" }
 
 # function bd { Invoke-Expression 'git diff --name-status master..' }
@@ -80,6 +78,8 @@ function gsq($commitOffset) {
 }
 
 function nrl { Invoke-Expression 'npm run local' }
+
+function nrm { Invoke-Expression 'npm run mock' }
 
 function ybp { Invoke-Expression 'yarn build-python' }
 
