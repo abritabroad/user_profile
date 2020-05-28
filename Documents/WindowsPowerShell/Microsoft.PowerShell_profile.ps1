@@ -81,6 +81,8 @@ function nrl { Invoke-Expression 'npm run local' }
 
 function nrm { Invoke-Expression 'npm run mock' }
 
+function nrs { Invoke-Expression 'npm run start' }
+
 function ybp { Invoke-Expression 'yarn build-python' }
 
 function ydp { Invoke-Expression 'yarn debug-page' }
