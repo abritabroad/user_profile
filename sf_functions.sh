@@ -9,7 +9,11 @@ gbd() {
 }
 
 gcam() {
-  git commit -am $1 --no-verify
+  if [ -z "$1" ]; then
+      echo -e "\nComment missing\n"
+      return 1
+  fi
+  git commit -am "$1" --no-verify
 }
 
 gcd() {
