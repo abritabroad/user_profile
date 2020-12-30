@@ -85,6 +85,10 @@ grh() {
   git reset --hard
 }
 
+grhd() {
+  git reset HEAD~
+}
+
 grho() {
   currentBranch = git rev-parse --symbolic-full-name --abbrev-ref HEAD
   git reset --hard origin/$currentBranch
