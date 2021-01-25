@@ -12,7 +12,8 @@ dism.exe /Online /Disable-Feature:Microsoft-Hyper-V
 # Allocate Required ports
 # -----------------------
 
-netsh int ipv4 add excludedportrange protocol=tcp startport=3000 numberofports=2    # SPA ports
+netsh int ipv4 add excludedportrange protocol=tcp startport=3000 numberofports=2    # Pharm SPA ports
+netsh int ipv4 add excludedportrange protocol=tcp startport=4200 numberofports=1    # MDTP SPA Angular server
 netsh int ipv4 add excludedportrange protocol=tcp startport=4848 numberofports=1    # Glassfish Admin port
 netsh int ipv4 add excludedportrange protocol=tcp startport=6942 numberofports=50   # IntelliJ server process
 netsh int ipv4 add excludedportrange protocol=tcp startport=8080 numberofports=1    # Glassfish Server HTTP port
