@@ -1,14 +1,13 @@
 
-gbh() {
+function gbh() {
   git for-each-ref --sort='-committerdate:iso8601' --format=' %(committerdate:iso8601)%09%(refname)' refs/heads
 }
 
-# # function bd { Invoke-Expression 'git diff --name-status master..' }
-gbd() {
+function gbd() {
   git diff --name-status develop..
 }
 
-gcam() {
+function gcam() {
   if [ -z "$1" ]; then
       echo -e "\nComment missing\n"
       return 1
@@ -16,23 +15,23 @@ gcam() {
   git commit -am "$1" --no-verify
 }
 
-gcd() {
+function gcd() {
   git checkout develop
 }
 
-gcsu() {
+function gcsu() {
   git checkout Supplements
 }
 
-gcl() {
+function gcl() {
   git checkout -
 }
 
-gcf() {
+function gcf() {
   git clean -fd
 }
 
-gcnb() {
+function gcnb() {
   if [ -z "$1" ]; then
       echo -e "\nBranch name missing\n"
       return 1
@@ -41,7 +40,7 @@ gcnb() {
   git push -u origin $1 --no-verify
 }
 
-gcp() {
+function gcp() {
   if [ -z "$1" ]; then
       echo -e "\nCommit # missing\n"
       return 1
@@ -49,56 +48,56 @@ gcp() {
   git cherry-pick $1 --no-commit
 }
 
-glg() {
+function glg() {
   git log --graph --pretty=format:"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cd)%Creset %C(green)%ce%Creset %s"
 }
 
-glgx() {
+function glgx() {
   git log --graph --pretty=format:"%h%x09%d%x09(%cd)%x09%ce%x09%s" > GitLog.xls
 }
 
-gpl() {
+function gpl() {
   git pull
 }
 
-gpu() {
+function gpu() {
   git push --no-verify
 }
 
-gpuf() {
+function gpuf() {
   git push --force --no-verify
 }
 
-gra() {
+function gra() {
   git rebase --abort
 }
 
-grd() {
+function grd() {
   git rebase develop
 }
 
-grdo() {
+function grdo() {
   git rebase develop -X ours
 }
 
-grh() {
+function grh() {
   git reset --hard
 }
 
-grhd() {
+function grhd() {
   git reset HEAD~
 }
 
-grho() {
+function grho() {
   currentBranch = git rev-parse --symbolic-full-name --abbrev-ref HEAD
   git reset --hard origin/$currentBranch
 }
 
-gs() {
+function gs() {
   git status
 }
 
-gsq() {
+function gsq() {
   if [ -z "$1" ]; then
       echo -e "\nCommit # missing\n"
       return 1
