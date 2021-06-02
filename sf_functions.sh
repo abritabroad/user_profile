@@ -104,3 +104,8 @@ function gsq() {
   fi
   git rebase -i HEAD~$1
 }
+
+function ij() {
+  cd '/mnt/c/Users/steve.fisher/OneDrive - Medsphere Systems Corporation/Documents/Apps/MDTP/Docker'
+  docker-compose up
+}
