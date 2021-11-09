@@ -89,7 +89,7 @@ function grhd() {
 }
 
 function grho() {
-  currentBranch = git rev-parse --symbolic-full-name --abbrev-ref HEAD
+  currentBranch=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD)
   git reset --hard origin/$currentBranch
 }
 
