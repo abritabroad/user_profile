@@ -91,3 +91,6 @@ function ydp { Invoke-Expression 'yarn debug-page' }
 
 function yla { Invoke-Expression 'yarn lint-angular' }
 
+if ($pwd.path.equals("C:\Users\a_bri")) {
+    cd C:\Users\a_bri\source\repos\fnm\FishNet\Merchandise-Microservices  
+}
