@@ -27,6 +27,10 @@ function gcl() {
   git checkout -
 }
 
+function gcma() {
+  git checkout master
+}
+
 function gcf() {
   git clean -fd
 }
