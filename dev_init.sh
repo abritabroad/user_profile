@@ -63,6 +63,6 @@ export KENDO_UI_LICENSE="eyJhbGciOiJSUzI1NiIsInR5cCI6IkxJQyJ9.eyJwcm9kdWN0cyI6W3
 export VSS_NUGET_EXTERNAL_FEED_ENDPOINTS="$(echo -n "$TOKEN_FISHNET" | base64)"
 
 if [ $(pwd) == "/mnt/c/Users/a_bri" ] || [ $(pwd) == "/home/steve" ] ; then
-    cd ~/source/repos/fnm/FishNet/Merchandise-Microservices
+    cd ~/source/repos/fnm/Merchandise-Microservices
 fi
 
