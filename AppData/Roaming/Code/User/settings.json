@@ -1,25 +1,173 @@
 {
-    "editor.detectIndentation": false,
-    "editor.snippetSuggestions": "top",
-    "editor.tabSize": 4,
-    "git.ignoreMissingGitWarning": true,
     "workbench.startupEditor": "newUntitledFile",
+    "[json]": {
+        "editor.defaultFormatter": "remimarsal.prettier-now"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "sync.gist": "cefff2a65319b94ed9c66c5970100b8e",
+    "editor.minimap.enabled": false,
+    "java.project.importHint": false,
+    "editor.tabSize": 2,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "explorer.confirmDelete": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+        "*.gz": "default"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
     "files.exclude": {
-        "**/.DS_Store": true,
-        "**/.git": false,
-        "**/.gitX": true,
-        "**/.hg": true,
-        "**/.svn": true,
-        "**/CVS": true,
-        "**/node_modules": true
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true
     },
     "git.enableSmartCommit": true,
-    "window.zoomLevel": 0,
-    "typescript.preferences.importModuleSpecifier": "non-relative",
-    "typescript.preferences.quoteStyle": "single",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-    "breadcrumbs.enabled": true,
-    "terminal.integrated.rendererType": "dom"
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.mergeEditor": true,
+    "launch": {
+        "configurations": [
+            {
+                "type": "chrome",
+                "request": "launch",
+                "name": "Launch Chrome against localhost",
+                "url": "http://localhost:4200/*",
+                "port": 9222,
+                "webRoot": "${workspaceRoot}"
+            },
+            {
+                "type": "chrome",
+                "request": "attach",
+                "name": "Attach Chrome against localhost",
+                "address": "localhost",
+                "port": 9222,
+                "webRoot": "${workspaceRoot}",
+            },
+            {
+                "type": "chrome",
+                "request": "attach",
+                "name": "Attach Chrome against localhost when available",
+                "address": "localhost",
+                "port": 9222,
+                "preLaunchTask":"wait for browser",
+                "webRoot": "${workspaceRoot}",
+            },
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Karma - ng test - Run Current File",
+                "program": "${workspaceRoot}/node_modules/@angular/cli/bin/ng",
+                "args": [
+                    "test",
+                    "--include",
+                    "${relativeFile}"
+                ],
+                "console": "integratedTerminal",
+                "internalConsoleOptions": "neverOpen"
+            },
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Jasmine - Run All Test - Headless",
+                "program": "${workspaceRoot}/node_modules/@angular/cli/bin/ng",
+                "cwd": "${workspaceRoot}",
+                "args": [
+                    "test",
+                    "--reporters=kjhtml,spec",
+                    "--browsers=ChromeHeadless",
+                    "--watch=true",
+                    "--progress=true",
+                    "--sourceMap=true",
+                    "--karma-config=${workspaceRoot}/karma.dev.conf.js"
+                ],
+                "console": "integratedTerminal",
+                "internalConsoleOptions": "neverOpen"
+            },
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Jasmine - Run Current Test File",
+                "program": "${workspaceRoot}/node_modules/@angular/cli/bin/ng",
+                "cwd": "${workspaceRoot}",
+                "args": [
+                    "test",
+                    "--include=${relativeFile}",
+                    "--reporters=kjhtml,spec",
+                    "--browsers=ChromeHeadless",
+                    "--watch=true",
+                    "--progress=true",
+                    "--sourceMap=true",
+                    "--karma-config=${workspaceRoot}/karma.dev.conf.js"
+                ],
+                "console": "integratedTerminal",
+                "internalConsoleOptions": "neverOpen"
+            },
+            {
+                "name": "Mocha - Run Current Test File",
+                "type": "node",
+                "request": "launch",
+                "program": "${workspaceFolder}/node_modules/mocha/bin/mocha",
+                "args": [
+                    "---require",
+                    "ts-node/register",
+                    "-p",
+                    "tsconfig.json",
+                    "${relativeFile}"
+                ],
+                "cwd": "${workspaceFolder}",
+                "console": "integratedTerminal",
+                "env": {
+                    "NODE_OPTIONS": "--experimental-specifier-resolution=node --loader ts-node/esm"
+                },
+                "protocol": "inspector",
+                "internalConsoleOptions": "neverOpen"
+            },
+            {
+                "name": "TS Mocha - Run Current Test File",
+                "type": "node",
+                "request": "launch",
+                "program": "${workspaceFolder}/node_modules/ts-mocha/bin/ts-mocha",
+                "args": [
+                    "-n",
+                    "loader=ts-node/esm",
+                    "-p",
+                    "tsconfig.json",
+                    "${relativeFile}"
+                ],
+                "cwd": "${workspaceFolder}",
+                "console": "integratedTerminal",
+                "protocol": "inspector",
+                "internalConsoleOptions": "neverOpen"
+            },
+            {
+                "name": "TS Jest - Run Current Test File",
+                "type": "node",
+                "request": "launch",
+                "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+                "args": [
+                    "${relativeFile}"
+                ],
+                "cwd": "${workspaceFolder}",
+                "console": "integratedTerminal",
+                "env": {
+                    "NODE_OPTIONS": "--experimental-specifier-resolution=node --loader ts-node/esm"
+                },
+                "protocol": "inspector",
+                "internalConsoleOptions": "neverOpen"
+            }
+        ],
+        "compounds": []
+    },
+    "launches": {
+        "KarmaRunCurrentAttach": ["Karma - ng test - Run Current", "Attach Chrome against localhost when available"],
+        "KarmaRunCurrent": "Karma - ng test - Run Current",
+        "ChromeAttach": "Attach Chrome against localhost"
+    },
+    "git.confirmSync": false,
+    "karmaTestExplorer.projectWorkspaces": [
+        "./Sync1.Ui"
+    ],
+    "karmaTestExplorer.karmaConfFilePath": "./Sync1.Ui/karma.conf.js"
 }
