@@ -46,22 +46,23 @@ echo "deb https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt
 sudo apt-get update
 sudo apt-get install helm
 
+# git config
+
+git config pull.rebase true
+
 # ~/.profile
 
-source ~/posh-git.sh        # https://github.com/lyze/posh-git-sh
+export EDITOR='/usr/bin/nano'
+export WD_CHROME_PATH='/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'
+
 source ~/sf_functions.sh
 
-export TOKEN_NPM=""
-export TOKEN_GIT=""
-export KENDO_UI_LICENSE=""
+export TOKEN_FISHNET="eicgnf5o2te2wmhhrsztsi5nehc4xtwo7jxxnrsllbrqvguf5msa"
+export KENDO_UI_LICENSE="eyJhbGciOiJSUzI1NiIsInR5cCI6IkxJQyJ9.eyJwcm9kdWN0cyI6W3sidHJpYWwiOmZhbHNlLCJjb2RlIjoiS0VORE9VSVJFQUNUIiwibGljZW5zZUV4cGlyYXRpb25EYXRlIjoxNjgxMDIyODM4fSx7InRyaWFsIjpmYWxzZSwiY29kZSI6IktFTkRPVUlDT01QTEVURSIsImxpY2Vuc2VFeHBpcmF0aW9uRGF0ZSI6MTY4MTAyMjgzOH0seyJ0cmlhbCI6ZmFsc2UsImNvZGUiOiJLRU5ET1VJVlVFIiwibGljZW5zZUV4cGlyYXRpb25EYXRlIjoxNjgxMDIyODM4fSx7InRyaWFsIjpmYWxzZSwiY29kZSI6IktFTkRPVUlBTkdVTEFSIiwibGljZW5zZUV4cGlyYXRpb25EYXRlIjoxNjgxMDIyODM4fV0sImludGVncml0eSI6InZoSk84UEZEdlpWcXdMQWRaXC96UTd6ZklYOGc9IiwibGljZW5zZUhvbGRlciI6ImFfYnJpdF9hYnJvYWRAaG90bWFpbC5jb20iLCJpYXQiOjE2NTUyNDMzMTIsImF1ZCI6ImFfYnJpdF9hYnJvYWRAaG90bWFpbC5jb20iLCJ1c2VySWQiOiJhNGEyNjA4OC1lMDQzLTQxMjItYTMwMy1iZTNlYmIzMGVmN2MifQ.ZD0HNUk-2YagP2IWqaXZDVM0SYlgIgdHa6lAaq0_-C7MmlVUDy38Fe_8zjqYgjZ9AQ_xf84MwAHM8BIZAVHT5wVjB8Y5_i9Y3TUFUI_vrVn47woc_9zWDAq_dXg9X_gs3BnBlZ5axC5d5QK5lkoT1bVNh42jngyiFm-oGZD47fcDktW7YSm11PIl4TtAnlSjkl9tjzo9jSEgkDzdf8Y5YwLCKlI3MGvOWP-igd9d_ysAw3Du3td72b8xvqWJf07oKKmGaMBeeWiK02FA6rEQFRsBKwLmEm8wCqGeG08YvfSJWegTBkU4eeUxnfYxxRJpj-GTjcGplMTyAHKW0iBZAA"
 
-export PROMPT_COMMAND='__posh_git_ps1 "\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]" "\\\$ ";'$PROMPT_COMMAND
+export VSS_NUGET_EXTERNAL_FEED_ENDPOINTS="$(echo -n "$TOKEN_FISHNET" | base64)"
 
 if [ $(pwd) == "/mnt/c/Users/a_bri" ] || [ $(pwd) == "/home/steve" ] ; then
     cd ~/source/repos/fnm/FishNet/Merchandise-Microservices
 fi
-
-# git config
-
-git config pull.rebase true
 
