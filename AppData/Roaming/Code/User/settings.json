@@ -68,41 +68,53 @@
                 "internalConsoleOptions": "neverOpen"
             },
             {
-                "type": "node",
-                "request": "launch",
-                "name": "Jasmine - Run All Test - Headless",
-                "program": "${workspaceRoot}/node_modules/@angular/cli/bin/ng",
-                "cwd": "${workspaceRoot}",
-                "args": [
-                    "test",
-                    "--reporters=kjhtml,spec",
-                    "--browsers=ChromeHeadless",
-                    "--watch=true",
-                    "--progress=true",
-                    "--sourceMap=true",
-                    "--karma-config=${workspaceRoot}/karma.dev.conf.js"
-                ],
-                "console": "integratedTerminal",
-                "internalConsoleOptions": "neverOpen"
+              "type": "chrome",
+              "request": "attach",
+              "name": "Attach to Karma",
+              "address": "localhost",
+              "restart": true,
+              "port": 9222,
+              "timeout": 600000,
+              "sourceMaps": true,
+              "webRoot": "${workspaceFolder}",
+              "pathMapping": {
+                "/_karma_webpack_": "${workspaceFolder}"
+              }
             },
             {
-                "type": "node",
-                "request": "launch",
-                "name": "Jasmine - Run Current Test File",
-                "program": "${workspaceRoot}/node_modules/@angular/cli/bin/ng",
-                "cwd": "${workspaceRoot}",
-                "args": [
-                    "test",
-                    "--include=${relativeFile}",
-                    "--reporters=kjhtml,spec",
-                    "--browsers=ChromeHeadless",
-                    "--watch=true",
-                    "--progress=true",
-                    "--sourceMap=true",
-                    "--karma-config=${workspaceRoot}/karma.dev.conf.js"
-                ],
-                "console": "integratedTerminal",
-                "internalConsoleOptions": "neverOpen"
+              "type": "node",
+              "request": "launch",
+              "name": "Jasmine - Run All Test - Headless",
+              "program": "${workspaceRoot}/node_modules/@angular/cli/bin/ng",
+              "cwd": "${workspaceRoot}",
+              "args": ["test",
+                "--reporters=kjhtml,spec", 
+                "--browsers=ChromeHeadless",
+                "--watch=true",
+                "--progress=true", 
+                "--sourceMap=true",
+                "--karma-config=${workspaceRoot}/karma.dev.conf.js"
+              ],
+              "console": "integratedTerminal",
+              "internalConsoleOptions": "neverOpen"
+            },
+            {
+              "type": "node",
+              "request": "launch",
+              "name": "Jasmine - Run Current Test File",
+              "program": "${workspaceRoot}/node_modules/@angular/cli/bin/ng",
+              "cwd": "${workspaceRoot}",
+              "args": ["test",
+                "--include=${relativeFile}",
+                "--reporters=kjhtml,spec", 
+                "--browsers=ChromeHeadless",
+                "--watch=true",
+                "--progress=true", 
+                "--sourceMap=true",
+                "--karma-config=${workspaceRoot}/karma.dev.conf.js"
+              ],
+              "console": "integratedTerminal",
+              "internalConsoleOptions": "neverOpen"
             },
             {
                 "name": "Mocha - Run Current Test File",
