@@ -136,5 +136,9 @@
     {
         "key": "ctrl+shift+t",
         "command": "test-explorer.focus"
+    },
+    {
+        "key": "ctrl+r ctrl+t",
+        "command": "test-explorer.run-test-at-cursor"
     }
 ]
