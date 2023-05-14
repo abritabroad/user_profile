@@ -140,5 +140,10 @@
     {
         "key": "ctrl+r ctrl+t",
         "command": "test-explorer.run-test-at-cursor"
+    },
+    {
+        "key": "ctrl+d ctrl+t",
+        "command": "test-explorer.debug-test-at-cursor",
+        "when": "editorTextFocus"
     }
 ]
