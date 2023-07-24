@@ -1,0 +1,8 @@
+Error:
+
+  run-detectors: unable to find an interpreter for /mnt/c/Program Files/Microsoft VS Code/Code.exe
+
+Solution:
+
+https://github.com/microsoft/vscode-remote-release/issues/6294#issuecomment-1066014923
+
