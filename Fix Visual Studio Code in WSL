@@ -4,5 +4,13 @@ Error:
 
 Solution:
 
-https://github.com/microsoft/vscode-remote-release/issues/6294#issuecomment-1066014923
+1)  (worked)
+
+  https://github.com/WhitewaterFoundry/Pengwin/issues/635#issuecomment-1379777932
+
+  Then shutdown WSL with "wsl --shutdown" in PS.
+
+2) (worked once?)
+
+  https://github.com/microsoft/vscode-remote-release/issues/6294#issuecomment-1066014923
 
