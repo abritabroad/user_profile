@@ -57,12 +57,29 @@ export WD_CHROME_PATH='/mnt/c/Program Files/Google/Chrome/Application/chrome.exe
 
 source ~/sf_functions.sh
 
+eval "$(oh-my-posh init bash)"
+
+WINDOWS_HOST=$(ip --json route show default | jq -re '.[].gateway')
+WSL_HOST=$(ip --json --family inet addr show eth0  | jq -re '.[].addr_info[].local')
+
+export NGROK_AUTHTOKEN=""
+export TOKEN_NUGET=""
+export TOKEN_NPM="$(echo -n "$TOKEN_FISHNET" | base64)"
 export TOKEN_FISHNET=""
 export KENDO_UI_LICENSE=""
 
 export VSS_NUGET_EXTERNAL_FEED_ENDPOINTS="$(echo -n "$TOKEN_FISHNET" | base64)"
 
+# dotnet nuget add source https://sync1systems.pkgs.visualstudio.com/_packaging/Sync1.LOS/nuget/v3/index.json --name sync1 --username 'sync1systems' --password ${TOKEN_NUGET} --store-password-in-clear-text
+
 if [ $(pwd) == "/mnt/c/Users/a_bri" ] || [ $(pwd) == "/home/steve" ] ; then
-    cd ~/source/repos/fnm/Merchandise-Microservices
+#    cd ~/source/repos/fnm/Merchandise-Microservices
+    cd ~/source/repos/Clients-Sync1/docker
 fi
 
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+. "$HOME/.cargo/env"
+
+
+# long bash startup times? comment out last line of ~/.bashrc (Angular autocompletion)
