@@ -49,6 +49,8 @@ sudo apt-get install helm
 # git config
 
 git config pull.rebase true
+git config user.email ""
+git config user.name "Steven Fisher"
 
 # ~/.profile
 
