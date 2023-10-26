@@ -91,6 +91,23 @@ function ydp { Invoke-Expression 'yarn debug-page' }
 
 function yla { Invoke-Expression 'yarn lint-angular' }
 
+# Chocolatey profile
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
+}
+
+$ENV:NGROK_AUTHTOKEN=""
+
+$ENV:KENDO_UI_LICENSE=""
+$ENV:TOKEN_FISHNET=""
+$ENV:TOKEN_NUGET=""
+$ENV:TOKEN_NPM=""
+
+$ENV:VSS_NUGET_EXTERNAL_FEED_ENDPOINTS=$([Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($ENV:TOKEN_FISHNET)))
+
+oh-my-posh init pwsh | Invoke-Expression
+
 if ($pwd.path.equals("C:\Users\a_bri")) {
     cd C:\Users\a_bri\source\repos\fnm\FishNet\Merchandise-Microservices  
 }
