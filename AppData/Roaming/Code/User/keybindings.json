@@ -146,4 +146,8 @@
         "command": "test-explorer.debug-test-at-cursor",
         "when": "editorTextFocus"
     }
+    {
+        "key": "ctrl+up",
+        "command": "workbench.action.toggleMaximizedPanel"
+    }
 ]
