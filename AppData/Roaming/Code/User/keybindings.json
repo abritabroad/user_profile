@@ -116,10 +116,6 @@
         "when": "workbench.panel.output.active"
     },
     {
-        "key": "ctrl+up",
-        "command": "workbench.action.toggleMaximizedPanel"
-    },
-    {
         "key": "ctrl+alt+[",
         "command": "editor.fold",
         "when": "editorTextFocus && foldingEnabled"
@@ -178,5 +174,13 @@
         "key": "ctrl+k ctrl+j",
         "command": "-editor.unfoldAll",
         "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "editor.gotoNextFold"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "editor.gotoPreviousFold"
     }
 ]
